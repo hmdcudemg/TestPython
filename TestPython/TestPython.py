@@ -5,5 +5,8 @@
 
 # Dia 1
 
-name = input("Enter Name:")
-print("Hola", name)
+hrs = float(input("Enter Hours:"))
+rate = float(input("Enter Rate:"))
+total = hrs * rate
+print(type(hrs),  type(rate), type(total))
+print(total)
