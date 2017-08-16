@@ -5,8 +5,18 @@
 
 # Dia 1
 
-hrs = float(input("Enter Hours:"))
-rate = float(input("Enter Rate:"))
-total = hrs * rate
-print(type(hrs),  type(rate), type(total))
-print(total)
+Cs = float(input("score: "))
+if Cs > 1.0: 
+    print("Bad Input, try again")
+elif Cs < 0:
+    print("Bad Input, try again")
+elif Cs < 0.6:
+    print("F")
+elif Cs >= 0.6 and Cs < 0.7:
+    print("E")
+elif Cs >= 0.7 and Cs < 0.8:
+    print("D")
+elif Cs >= 0.8 and Cs < 0.9:
+    print("B")
+elif Cs >= 0.9 and Cs < 1:
+    print("A")
