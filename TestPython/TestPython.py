@@ -5,18 +5,15 @@
 
 # Dia 1
 
-Cs = float(input("score: "))
-if Cs > 1.0: 
-    print("Bad Input, try again")
-elif Cs < 0:
-    print("Bad Input, try again")
-elif Cs < 0.6:
-    print("F")
-elif Cs >= 0.6 and Cs < 0.7:
-    print("E")
-elif Cs >= 0.7 and Cs < 0.8:
-    print("D")
-elif Cs >= 0.8 and Cs < 0.9:
-    print("B")
-elif Cs >= 0.9 and Cs < 1:
-    print("A")
+def computepay(h, r) :
+    if h > 40:
+        ex = h - 40
+        total = 40.0 * r + ex * 1.5 * r
+    else :
+        total = h * r
+    return total
+#  Fin de la función ahora viene el código que normalmente se ejecuta
+hrs = float(input("Enter Hours:"))
+rate = float(input("Enter Rate:"))
+pago = computepay(hrs,rate)  # Llamado a la función
+print("Pay:",pago)
